@@ -1,11 +1,14 @@
 import React from 'react';
-import './App.css';
-import Section1 from "./sections/section1";
 
-function App() {
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+const App = () => {
   return (
     <div className="App">
-        <Section1/>
+        <Navbar/>
+        <div className="h-96"></div>
+        <Footer/>
     </div>
   );
 }
