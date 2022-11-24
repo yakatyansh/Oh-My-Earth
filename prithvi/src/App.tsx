@@ -1,11 +1,13 @@
 import React from 'react';
 import './App.css';
-import Section1 from "./sections/section1";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <div className="App">
-        <Section1/>
+        <Navbar />
+        <Footer />
     </div>
   );
 }
