@@ -3,10 +3,12 @@ from strawberry.extensions import QueryDepthLimiter, ValidationCache, ParserCach
 from strawberry.tools import merge_types
 
 from blogs.graphql.mutations.manageBooks import ManagePost
-from blogs.graphql.queries.book import BlogQueries
+from blogs.graphql.queries.book import PostQuery
+from donations.graphql.mutations.manageBooks import Donations
 
-Mutations = merge_types('Mutations', (ManageStudents,))
-Query = merge_types('Queries', (UserQuery,))
+
+Mutations = merge_types('Mutations', (ManagePost, Donations))
+Query = merge_types('Queries', (PostQuery,))
 
 extensions = [
     # JWTExtension,
