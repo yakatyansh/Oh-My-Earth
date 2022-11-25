@@ -10,8 +10,8 @@ const Stats = () => {
                 <p>Supporters</p>
             </div>
             <div>
-                <h1 className="md:text-[40px] text-[25px] font-bold">Rs.200M</h1>
-                <p>Money in doantions</p>
+                <h1 className="md:text-[40px] text-[25px] font-bold">Rs.20M</h1>
+                <p>Money in donations</p>
             </div>
             <div>
                 <h1 className="md:text-[40px] text-[25px] font-bold">50+</h1>
