@@ -1,7 +1,7 @@
 <img src="https://api.products.aspose.app/slides/api/Common/DownloadFile/59eda48e-685d-4e74-b936-8a98f3d2867e?file=result.gif">
 
 ## Aim
-The main aim is to bring the world together for the only cause of "To create a healthy earth ecosystem with healthy components" in & around our habitat. It is being worked upon by encouraging and promoting Environmental values in the country and spread awareness for Environmental conservation to the entire world via our website.
+The main aim is to bring the world together for the only cause of "Creating a healthy earth ecosystem" with healthy components in & around our habitat. It is being worked upon by encouraging and promoting Environmental values in the country and spread awareness for Environmental conservation to the entire world via our website.
 
 ## Main Features
 - Blogs
