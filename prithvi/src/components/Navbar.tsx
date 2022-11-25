@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {useEffect, useState} from "react";
 import { Link } from "react-router-dom";
 import logo from "../Assets/logo_half_nav.png"
 import styled from "@emotion/styled";
@@ -44,8 +44,26 @@ export const PageLinkContainer = styled.div`
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
+
+    const [stickyClass, setStickyClass] = useState('relative');
+
+    useEffect(() => {
+        window.addEventListener('scroll', stickNavbar);
+
+        return () => {
+            window.removeEventListener('scroll', stickNavbar);
+        };
+    }, []);
+
+    const stickNavbar = () => {
+        if (window !== undefined) {
+            let windowHeight = window.scrollY;
+            windowHeight > 0 ? setStickyClass('fixed') : setStickyClass('relative');
+        }
+    };
+
     return (
-        <nav className="py-2 z-40">
+        <nav className={`py-2 z-40 bg-white w-full fixed`}>
             <div className="md:w-11/12 w-full md:px-0 px-3 mx-auto">
                 <div className="flex items-center justify-between h-16">
                     <div className="flex gap-4 items-center">

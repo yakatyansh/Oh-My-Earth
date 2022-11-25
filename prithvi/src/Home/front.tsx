@@ -1,6 +1,6 @@
 import { useState } from "react";
 import SearchBar from "../components/searchBar";
-import bg from "../Assets/bg.jpg";
+import bg from "../Assets/bg2.jpg";
 import styled from "@emotion/styled";
 import CountUp from 'react-countup';
 
@@ -40,21 +40,15 @@ export default function Front() {
 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path
     stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
 </span>
-                                <span className="relative">Check Ppm</span>
+                                <span className="relative mr-1">Check AQI</span>
                             </button>
-                            // <button
-                            //     onClick={() => setSearchBar(!searchBar)}
-                            //     className="sm:text-[20px] text-white sm:px-10 px-3 py-3 rounded-md border-[1px] border-white capitalize sm:w-auto w-full font-bold"
-                            // >
-                            //     Check Ppm
-                            // </button>
                         )}
                     </div>
                     <article className="lg:flex hidden items-end absolute top-[30%] right-0 w-[40%] border-l-2 h-3/5 px-2 border-l-white backdrop-opacity-50">
                         <div className="text-white text-[26px] w-[80%]">
                             <div className="font-extrabold text-7xl">Helping you <div className="text-lime-500">Green</div> the World</div>
                             <div className="mt-7">Support Earned so far</div>
-                             <div className="text-lime-500 text-5xl"> <CountUp end={129749} duration={12} /> </div>
+                            <div className="text-lime-500 text-5xl"> <CountUp end={129749} duration={1.5} /> </div>
                         </div>
                     </article>
                 </div>
