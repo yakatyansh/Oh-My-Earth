@@ -1,5 +1,4 @@
 import { useState } from "react";
-import random from "../Assets/random.png";
 
 const SearchBar = () => {
     const [focusBox, setFocusBox] = useState(false);
