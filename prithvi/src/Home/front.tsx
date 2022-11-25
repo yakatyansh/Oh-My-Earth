@@ -9,7 +9,7 @@ const FrontContainer = styled.div`
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    height: 90vh;
+    height: 92vh;
 `
 
 export default function Front() {

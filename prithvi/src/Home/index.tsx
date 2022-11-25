@@ -1,9 +1,11 @@
 import Front from "./front";
+import Stats from "./stats";
 
 export default function Home() {
     return (
         <main>
-            <Front />
+            <Front/>
+            <Stats/>
         </main>
     );
 }
