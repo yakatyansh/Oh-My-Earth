@@ -2,7 +2,7 @@ import { useState } from "react";
 import SearchBar from "../components/searchBar";
 import bg from "../Assets/bg.jpg";
 import styled from "@emotion/styled";
-import CountUp from "react-countup";
+import CountUp from 'react-countup';
 
 const FrontContainer = styled.div`
     background-image: url(${bg});
@@ -35,13 +35,13 @@ export default function Front() {
                                 onClick={() => setSearchBar(!searchBar)}
                                 className="sm:text-[20px] text-white sm:px-10 px-3 py-3 rounded-md border-[1px] border-white capitalize sm:w-auto w-full font-bold"
                             >
-                                Check Ppm
+                                Check ppm
                             </button>
                         )}
                     </div>
                     <article className="lg:flex hidden items-end absolute top-[30%] right-0 w-[40%] border-l-2 h-3/5 px-2 border-l-white backdrop-opacity-50">
                         <div className="text-white text-[26px] w-[80%]">
-                            <div className="font-extrabold text-7xl">Helping you help the World</div>
+                            <div className="font-extrabold text-7xl">Helping you <div className="text-lime-500">Green</div> the World</div>
                             <div className="mt-7">Support Earned so far</div>
                              <div className="text-lime-500 text-5xl"> <CountUp end={129749} duration={12} /> </div>
                         </div>
