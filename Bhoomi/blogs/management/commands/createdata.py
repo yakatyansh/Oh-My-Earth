@@ -2,9 +2,6 @@ from django.core.management.base import BaseCommand
 from faker import Faker
 import faker.providers
 from blogs.models import Category, Post
-from donations.models import NGO, donation_request, donation_request_view
-from user.models import User
-from complaints.models import Complaint
 
 CATEGORIES = [
     "Air Pollution",
