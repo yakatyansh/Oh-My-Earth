@@ -28,7 +28,7 @@ class NGO(models.Model):
     def __str__(self):
         return self.ngo_name
 
-class donation_request(models.Model):
+class donaetion_requst(models.Model):
 
     donation_description = models.TextField(blank=True,default=None)
     donation_amount = models.CharField(default=None,blank=True,max_length=15)

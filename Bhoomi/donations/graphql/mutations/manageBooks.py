@@ -1,14 +1,14 @@
 import strawberry
 from graphql import GraphQLError
+from donations.graphql.input.book import DonationInput
+from donations.models import donaetion_requst
 
 @strawberry.type
-class ManageBooks:
+class Donations:
     @strawberry.mutation
-    def createBook(self, info, title: str, author: str, price: int, quantity: int) -> str:
-        return "Book created successfully"
-    @strawberry.mutation
-    def updateBook(self, info, id: int, title: str, author: str, price: int, quantity: int) -> str:
-        return "Book updated successfully"
-    @strawberry.mutation
-    def deleteBook(self, info, id: int) -> str:
-        return "Book deleted successfully"
+    def createDonation(self, info, input: DonationInput) -> donaetion_requst:
+        if info.context.user.is_anonymous:
+            raise GraphQLError("You must be logged in to create a donation")
+        donation = donaetion_requst(title=input.donation_description, description=input.donation_amount)
+        donation.save()
+        return donation

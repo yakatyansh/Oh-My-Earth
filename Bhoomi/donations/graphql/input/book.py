@@ -4,8 +4,6 @@ import strawberry
 
 @strawberry.input()
 
-class BookInput:
-    book_name: str
-    author: str
-    cost: int
-    summary: str
+class DonationInput:
+        donation_description: str
+        donation_amount: int
