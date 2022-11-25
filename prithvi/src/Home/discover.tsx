@@ -22,7 +22,7 @@ const cards = [
 
 const DiscoverCard = ({ card }: any) => {
     return (
-        <div className="relative rounded-xl overflow-hidden cursor-pointer h-2/3 scale-auto hover:scale-105 transition-transform">
+        <div className="relative rounded-xl overflow-hidden cursor-pointer h-2/3 -mt-14 scale-auto hover:scale-105 transition-transform">
             <img src={card.image} alt="discover_image" />
             <div className="absolute bottom-10 capitalize left-10 text-white font-bold md:text-[50px] text-[40px]">
                 {card.title}
@@ -33,7 +33,7 @@ const DiscoverCard = ({ card }: any) => {
 
 const Discover = () => {
     return (
-        <section className="my-14">
+        <section className="mt-14">
             <div className="md:w-11/12 w-full md:px-0 px-3 mx-auto">
                 <div>
                     <h1 className={`md:text-[40px] text-[30px] font-bold uppercase`}>Discover</h1>

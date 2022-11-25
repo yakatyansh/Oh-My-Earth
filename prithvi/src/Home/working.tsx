@@ -33,7 +33,7 @@ const items = [
 
 const Working = () => {
     return (
-        <section className="my-14">
+        <section className="my-24">
             <div className="md:w-11/12 w-full md:px-0 px-3 mx-auto">
                 <h1 className={`md:text-[40px] text-[30px] font-bold uppercase`}>how it works</h1>
                 <div className="bg-[#D9CAB3] bg-opacity-30 px-8 py-14 rounded-md mt-8">
