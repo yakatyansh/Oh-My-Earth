@@ -32,5 +32,7 @@ The main aim is to bring the world together for the only cause of "Creating a he
 
 ## The Team
 - [Gaurav Sharma](https://github.com/grvsh02)
+- [Saumy Shukla](https://github.com/saumy4854)
 - [Prashant Gehlot](https://github.com/Prashant9683)
 - [Yash Katyan](https://github.com/yakatyansh)
+
